@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calendar Ringer</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #eef3ff, #f8fbff);
+        color: #0f172a;
+      }
+      header {
+        padding: 64px 24px 48px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.2rem, 4vw, 3rem);
+      }
+      p.lead {
+        margin: 0 auto;
+        max-width: 640px;
+        line-height: 1.6;
+        font-size: 1.1rem;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 24px 64px;
+        display: grid;
+        gap: 32px;
+      }
+      section {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 20px;
+        box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+        padding: 32px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      ul {
+        padding-left: 20px;
+        line-height: 1.6;
+      }
+      .cta {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      a.btn {
+        display: inline-block;
+        padding: 14px 28px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 16px 30px rgba(37, 99, 235, 0.25);
+      }
+      footer {
+        text-align: center;
+        padding: 32px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+      }
+      @media (max-width: 640px) {
+        section {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Calendar Ringer</h1>
+      <p class="lead">Never miss a Google Meet again. Calendar Ringer gives you a friendly popup and ringtone a few minutes before each meeting so you can join on time.</p>
+    </header>
+    <main>
+      <section>
+        <h2>Why users love it</h2>
+        <ul>
+          <li>Custom ringtone that plays until you join or snooze.</li>
+          <li>One-click join buttons for Google Meet or the original calendar event.</li>
+          <li>Works entirely locally – your calendar data never leaves Chrome.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Get started</h2>
+        <p>Install Calendar Ringer from the Chrome Web Store, sign in with Google, and choose how many minutes of heads-up you want. That’s it!</p>
+        <div class="cta">
+          <a class="btn" href="https://chromewebstore.google.com/detail/calendar-ringer/jofbgiceificdpfdgbocejmjnonbojpc" target="_blank" rel="noreferrer">View on Chrome Web Store</a>
+          <a href="privacy.html">Privacy policy</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="year"></span> Calendar Ringer · Built by Adham Farag
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
