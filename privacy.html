@@ -25,12 +25,13 @@
         box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
         border-radius: 20px;
         padding: 32px;
-        text-align: center;
+        text-align: left;
       }
       h1 {
         margin-top: 0;
+        text-align: center;
       }
-      p {
+      p, li {
         line-height: 1.6;
       }
       a {
@@ -51,15 +52,49 @@
   <body>
     <div class="card">
       <h1>Privacy Policy – Calendar Ringer</h1>
-      <p>Calendar Ringer runs entirely in your browser. It requests <strong>read-only</strong> access to your Google Calendar to show upcoming events and reminders.</p>
-      <ul style="text-align:left;line-height:1.6;">
-        <li><strong>Data storage:</strong> Event titles, times, and links are only used locally to schedule notifications.</li>
-        <li><strong>No servers:</strong> We do not collect, transmit, or store your data externally.</li>
-        <li><strong>Permissions:</strong> calendar.readonly, notifications, alarms, storage, identity, offscreen.</li>
-        <li><strong>No data sharing:</strong> We never sell or share any data with third parties.</li>
+      <p><strong>Effective Date:</strong> September 18, 2025</p>
+
+      <p>Calendar Ringer (“we,” “our,” or “us”) respects your privacy. This policy explains what information we access, how we use it, and how you can control your data.</p>
+
+      <h2>Information We Access</h2>
+      <ul>
+        <li><strong>Google Calendar events:</strong> We request the scope <code>https://www.googleapis.com/auth/calendar.evenets.readonly</code> to read your upcoming events (start/end times, title, and Google Meet links) so we can show reminders and provide a “Join” button.</li>
+        <li><strong>Basic profile:</strong> We request <code>openid</code>, <code>email</code>, and <code>profile</code> to identify which Google account is connected and display your account email inside the extension.</li>
       </ul>
-      <p>You may revoke access at any time via your Google Account security settings or by uninstalling the extension.</p>
-      <p>Contact: <a href="mailto:domma.yasser@gmail.com">domma.yasser@gmail.com</a></p>
+
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>Event data is used only to calculate reminder times and to display a Google Meet join link.</li>
+        <li>Profile data is used only to show which account is connected. It is not used for marketing or shared with anyone.</li>
+      </ul>
+
+      <h2>Data Storage and Retention</h2>
+      <ul>
+        <li>All data is processed locally in your browser.</li>
+        <li>Data is stored in memory only and is discarded after use or when you close your browser.</li>
+        <li>No data is transmitted to or stored on external servers.</li>
+      </ul>
+
+      <h2>User Control</h2>
+      <ul>
+        <li>You can disconnect at any time which revokes our access and clears any cached data.</li>
+        <li>You can revoke access directly in your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account security settings</a>.</li>
+      </ul>
+
+      <h2>Data Sharing and Human Access</h2>
+      <p>No human has access to your data. We do not share, sell, or transfer data to third parties.</p>
+
+      <h2>Children’s Privacy</h2>
+      <p>Calendar Ringer is not directed to children under 13 and does not knowingly collect personal information from children.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this Privacy Policy from time to time. Updates will appear at this URL with a new effective date.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this policy, contact us at:  
+        <a href="mailto:domma.yasser@gmail.com">domma.yasser@gmail.com</a>
+      </p>
+
       <a class="back" href="index.html">&larr; Back to homepage</a>
     </div>
   </body>
