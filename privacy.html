@@ -54,11 +54,11 @@
       <h1>Privacy Policy – Calendar Ringer</h1>
       <p><strong>Effective Date:</strong> September 18, 2025</p>
 
-      <p>Calendar Ringer (“we,” “our,” or “us”) respects your privacy. This policy explains what information we access, how we use it, and how you can control your data.</p>
+      <p>Calendar Ringer (“we,” “our,” or “us”) respects your privacy. This policy explains what information we access, how we use it, how we protect it, and how you can control your data.</p>
 
       <h2>Information We Access</h2>
       <ul>
-        <li><strong>Google Calendar events:</strong> We request the scope <code>https://www.googleapis.com/auth/calendar.evenets.readonly</code> to read your upcoming events (start/end times, title, and Google Meet links) so we can show reminders and provide a “Join” button.</li>
+        <li><strong>Google Calendar events:</strong> We request the scope <code>https://www.googleapis.com/auth/calendar.readonly</code> to read your upcoming events (start/end times, title, and Google Meet links) so we can show reminders and provide a “Join” button.</li>
         <li><strong>Basic profile:</strong> We request <code>openid</code>, <code>email</code>, and <code>profile</code> to identify which Google account is connected and display your account email inside the extension.</li>
       </ul>
 
@@ -77,8 +77,17 @@
 
       <h2>User Control</h2>
       <ul>
-        <li>You can disconnect at any time which revokes our access and clears any cached data.</li>
-        <li>You can revoke access directly in your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account security settings</a>.</li>
+        <li>You can disconnect at any time by using the extension’s “Disconnect” button, which revokes our access and clears any cached data.</li>
+        <li>You can also revoke access directly in your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account security settings</a>.</li>
+      </ul>
+
+      <h2>Data Protection</h2>
+      <ul>
+        <li><strong>Encryption in transit:</strong> All communication with Google APIs uses HTTPS to protect data in transit.</li>
+        <li><strong>Local processing only:</strong> Event and profile data remain inside your browser and are not written to disk or external servers.</li>
+        <li><strong>Secure token storage:</strong> OAuth tokens are stored using Chrome’s extension storage APIs and never shared with any third party.</li>
+        <li><strong>No human access:</strong> Data is processed automatically by the extension; no one can view or access it.</li>
+        <li><strong>User revocation:</strong> Access can be revoked anytime via your Google Account settings.</li>
       </ul>
 
       <h2>Data Sharing and Human Access</h2>
